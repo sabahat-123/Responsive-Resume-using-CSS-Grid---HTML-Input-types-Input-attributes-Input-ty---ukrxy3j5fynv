@@ -4,6 +4,202 @@
     box-sizing: border-box;
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffff;
+}
+body{
+    background-color: #a6aba6;
+}
+/* Write CSS code below */
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin:20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+section{
+    display: block;
+}
+.left-section{
+    grid-column: span 1;
+    background-color: #242531;
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: #f7f7f7;
+    
+
+}
+.left-content{
+    padding: 1rem;
+}
+/* .profile{
+    display: block;
+    width: 268px;
+    height: 110px;
+} */
+.profile-image{
+    width: 60%;
+    display: block;
+    align-items: center;
+    margin: auto;
+    border: 5px solid #ffff;
+    border-radius: 30px;
+}
+.name{
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 0.8rem;
+    text-align: center;
+    letter-spacing:  0.02px;
+    text-transform: uppercase;
+    color: #ffff;
+}
+.designation{
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #81D4FA;
+}
+hr{
+   border-bottom: 1px solid #ffff ;
+}
+.description{
+    font-size: 0.75 rem;
+    color: #ffff;
+    text-align: center;
+    padding:1 rem;
+    line-height: 1.8;
+}
+.personal-details{
+    font-size: 0.75 rem;
+    color: #ffff;
+    text-align: center;
+    padding: 1rem;
+   
+
+}
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px; 
+    margin: 0.5rem;   
+}
+a{
+    cursor: pointer;
+}
+.email,.telephone,.address{
+   display: flex;
+   margin-bottom: 0.3rem;
+    
 }
 
-/* Write CSS code below */
+i{
+    color: #7B58B8;
+    
+}
+.contact-label{
+    letter-spacing: 0.8px;
+    font-size: 0.8rem;
+}
+.icon{
+    margin: 0 0.5rem;
+}
+.skills{
+    font-size: 0.75 rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    color: #ffff;
+}
+.skill-name{
+   font-size: 0.65rem;
+   text-transform: uppercase;
+   text-align: left;
+   padding-bottom: 0.5rem;
+  
+
+}
+
+.progress-bar{
+    border: 1px white solid;
+    border-radius: 5px;
+    height: 4px;
+    background-color: #ffff;
+    margin-bottom: 0.5rem;
+    width: 80%;
+   
+
+}
+.progress-css{
+    width: 70%;
+}
+.progress-js{
+    width: 60%;
+}
+.progress-nodejs{
+    width: 50%;
+}
+.progress-reactjs{
+    width: 40%;
+}
+.progress-mongodb{
+    width: 30%;
+}
+.progress-php{
+    width: 20%;
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    color: #000;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.para{
+    color: #000;
+    padding: 0.5rem;
+}
+.about-section{
+    font-size: 18px;
+}
+.right-title-inner{
+    color: #000;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1PX;
+}
+.edu-info{
+    display: flex;
+    justify-content: space-evenly;
+}
+.right-side{
+    padding-top: 40px;
+    font-size: 14px;
+}
+.small-para{
+    color: #000;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.exp-info{
+    display: flex;
+    justify-content: space-evenly;
+}
+@media (max-width : 674px){
+        .main-content{
+            grid-template-columns: repeat(1, 1fr);
+        }
+}
+@media (max-width:630px){
+    .main-content{
+        grid-template-columns: 1;
+    }
+
+}
+    
