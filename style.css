@@ -47,7 +47,7 @@ section{
     border-radius: 30px;
 }
 .name{
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 700;
     padding: 0.8rem;
     text-align: center;
@@ -66,10 +66,10 @@ hr{
    border-bottom: 1px solid #ffff ;
 }
 .description{
-    font-size: 0.75 rem;
+    font-size: 0.75rem;
     color: #ffff;
     text-align: center;
-    padding:1 rem;
+    padding:1rem;
     line-height: 1.8;
 }
 .personal-details{
@@ -110,7 +110,7 @@ i{
     font-size: 0.75 rem;
     text-align: center;
     text-transform: uppercase;
-    padding: 1rem 0.5rem 1rem 0.5rem;
+    padding: 1rem 0.5rem ;
     color: #ffff;
 }
 .skill-name{
@@ -191,7 +191,9 @@ i{
     display: flex;
     justify-content: space-evenly;
 }
-@media (max-width : 674px){
+/* @media screen(max-width : 674px) {
+    
+} (max-width : 674px){
         .main-content{
             grid-template-columns: repeat(1, 1fr);
         }
@@ -201,5 +203,16 @@ i{
         grid-template-columns: 1;
     }
 
+} */
+@media screen and (max-width : 673px) {
+
+    .main-content{
+            grid-template-columns: repeat(1, 1fr);
+        }
+}
+@media screen and(max-width:630px){
+    .main-content{
+        grid-template-columns: repeat(1,fr);
+    }
 }
     
